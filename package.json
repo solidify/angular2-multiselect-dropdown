@@ -21,7 +21,7 @@
     "build:umd": "webpack --config webpack-umd.config.ts",
     "build:umd:watch": "npm run build:umd -- --watch",
     "build:watch": "concurrently --raw \"npm run build:umd:watch\" \"npm run build:esm:watch\"",
-    "build-sass":"node-sass --include-path scss src/themes/default.theme.scss dist/themes/default.theme.css",
+    "build-sass": "node-sass --include-path scss src/themes/default.theme.scss dist/themes/default.theme.css",
     "ci": "npm run lint && npm run test && npm run build && npm run docs",
     "clean:all": "npm run clean:tmp && rimraf node_modules",
     "clean:tmp": "rimraf coverage dist tmp docs",
@@ -40,7 +40,7 @@
     "tslint": "tslint",
     "github-pages": "ng build --base-href /angular2-multiselect-dropdown/"
   },
-  "private": false,
+  "private": true,
   "dependencies": {},
   "devDependencies": {
     "@angular/animations": "^4.0.0",
